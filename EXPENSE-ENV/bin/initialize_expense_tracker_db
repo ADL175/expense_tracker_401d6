@@ -1,0 +1,12 @@
+#!/Users/davidlim/Desktop/Project/401_python/wk3/expense_tracker_401d6/EXPENSE-ENV/bin/python3
+# EASY-INSTALL-ENTRY-SCRIPT: 'expense-tracker','console_scripts','initialize_expense_tracker_db'
+__requires__ = 'expense-tracker'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('expense-tracker', 'console_scripts', 'initialize_expense_tracker_db')()
+    )
